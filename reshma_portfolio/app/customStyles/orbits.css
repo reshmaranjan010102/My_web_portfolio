@@ -1,0 +1,33 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shared orbit animation */
+.orbit {
+  position: absolute;
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+/* Different speeds for each orbit */
+.orbit-1 {
+  animation-duration: 20s;
+}
+.orbit-2 {
+  animation-duration: 35s;
+}
+.orbit-3 {
+  animation-duration: 50s;
+}
+
+/* Dot styling (you can customize) */
+.dot {
+  position: absolute;
+}

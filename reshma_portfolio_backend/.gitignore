@@ -1,0 +1,12 @@
+# Virtual environment
+venv/
+
+# Python bytecode and compiled files
+__pycache__/
+*.pyc
+
+#  security keys
+*.env
+/reshma_portfolio.pem
+
+# Ignore requirements if dynamically generated
