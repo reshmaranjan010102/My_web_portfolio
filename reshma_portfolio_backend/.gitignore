@@ -10,3 +10,8 @@ __pycache__/
 /reshma_portfolio.pem
 
 # Ignore requirements if dynamically generated
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

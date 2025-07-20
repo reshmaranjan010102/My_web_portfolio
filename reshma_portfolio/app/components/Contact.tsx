@@ -15,7 +15,7 @@ export default function Contact() {
     });
 
     const handleSend = () => {
-        fetch(`http://127.0.0.1:8000/send-user-message/`, {
+        fetch(`https:my-portfolio-env.eba-etkdvcvm.ap-south-1.elasticbeanstalk.com/send-user-message/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

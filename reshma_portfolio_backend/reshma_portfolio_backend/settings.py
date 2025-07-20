@@ -9,7 +9,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["reshmaranjan-010102.web.app", "127.0.0.1"]
+ALLOWED_HOSTS = ["my-portfolio-env.eba-etkdvcvm.ap-south-1.elasticbeanstalk.com", "reshmaranjan-010102.web.app", "127.0.0.1"]
 
 INSTALLED_APPS = [
     "reshma_portfolio_backend",
@@ -34,6 +34,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "https:my-portfolio-env.eba-etkdvcvm.ap-south-1.elasticbeanstalk.com",
     "http://192.168.76.239:3000",
     "https://reshmaranjan-010102.web.app"
 ]
@@ -102,6 +103,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_URL = "static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
